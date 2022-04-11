@@ -30,7 +30,7 @@ public class KafkaTestController {
     String requestReplyTopic;
 
     @ResponseBody
-    @PostMapping(value="/sum")
+    @PostMapping(value="/message")
     public ResponseModel sum(@RequestParam(value = "message") String message) throws InterruptedException, ExecutionException {
         RequestModel request = new RequestModel();
         request.setMessage(message);
